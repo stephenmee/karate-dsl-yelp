@@ -1,0 +1,93 @@
+10:40:43.402 request:
+1 > POST https://api.yelp.com/v3/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 > Connection: Keep-Alive
+1 > Content-Length: 447
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.yelp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{"query":"{\n search(term: \"burrito\", location: \"cork\" limit: 2) {\n     total\n         business {\n             name\n             rating\n             location {\n                 address1\n                 city\n                 state\n                 country\n             }\n         reviews(limit: 1) {\n             text\n             rating\n             user {\n                 name\n             }\n         }\n     }\n }\n    }"}
+
+10:40:44.303 response time in milliseconds: 898.94
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Connection: keep-alive
+1 < Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 varnish
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Served-By: cache-dub4336-DUB
+1 < content-type: application/json
+1 < server: openresty/1.13.6.2
+1 < transfer-encoding: chunked
+1 < x-b3-sampled: 0
+1 < x-extlb: 10-65-66-213-useast1aprod
+1 < x-proxied: 10-65-66-213-useast1aprod
+1 < x-routing-service: routing-main--useast1-5bcb54c99f-7g297; site=public_api_v3
+1 < x-zipkin-id: d5cccefdb8bb3fe2
+{"data":{"search":{"total":3,"business":[{"name":"La Calavera","rating":4.0,"location":{"address1":"4 Douglas West","city":"Cork","state":"CO","country":"IE"},"reviews":[{"text":"Saw the sign up for La Calavera for a couple months and was waiting for it to open- now it's here.\n\nWent for a first try tonight and found tasty...","rating":4,"user":{"name":"Daniel P."}}]},{"name":"Brendan's Veggie Burritos and Burgers","rating":4.0,"location":{"address1":"Patrick Street","city":"Cork","state":"CO","country":"IE"},"reviews":[{"text":"BRENDAN'S VEGGIES BURRITOS and BURGERS\nFast (well, fairly fast) Food stalls did a roaring trade during the weekend Jazz festival. I found myself in the...","rating":4,"user":{"name":"cork"}}]}]}}}
+
+10:40:44.312 request:
+1 > POST https://api.yelp.com/v3/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 > Connection: Keep-Alive
+1 > Content-Length: 73
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.yelp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{"query":"{\n  business(id: \"garaje-san-francisco\"){\n    url\n  }\n}"}
+
+10:40:44.572 response time in milliseconds: 258.78
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Connection: keep-alive
+1 < Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 varnish
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Served-By: cache-dub4327-DUB
+1 < content-type: application/json
+1 < server: openresty/1.13.6.2
+1 < transfer-encoding: chunked
+1 < x-b3-sampled: 0
+1 < x-extlb: 10-65-64-83-useast1aprod
+1 < x-proxied: 10-65-64-83-useast1aprod
+1 < x-routing-service: routing-main--useast1-5bcb54c99f-knh68; site=public_api_v3
+1 < x-zipkin-id: c793c939b07871f7
+{"data":{"business":{"url":"https://www.yelp.com/biz/garaje-san-francisco?adjust_creative=6AbCaexLqwnJsHqFj_HZBQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=6AbCaexLqwnJsHqFj_HZBQ"}}}
+
+10:40:44.579 request:
+1 > POST https://api.yelp.com/v3/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 > Connection: Keep-Alive
+1 > Content-Length: 76
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.yelp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{"query":"{\n  business(id: \"garaje-san-francisco\"){\n    rating\n  }\n}"}
+
+10:40:44.830 response time in milliseconds: 250.06
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Connection: keep-alive
+1 < Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 varnish
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Served-By: cache-dub4348-DUB
+1 < content-type: application/json
+1 < server: openresty/1.13.6.2
+1 < transfer-encoding: chunked
+1 < x-b3-sampled: 0
+1 < x-extlb: 10-65-66-213-useast1aprod
+1 < x-proxied: 10-65-66-213-useast1aprod
+1 < x-routing-service: routing-main--useast1-5bcb54c99f-thbg9; site=public_api_v3
+1 < x-zipkin-id: 108d7590a09eff68
+{"data":{"business":{"rating":4.5}}}
+

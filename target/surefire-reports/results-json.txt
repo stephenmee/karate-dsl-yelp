@@ -1,0 +1,1 @@
+{"features":1,"ignored":0,"efficiency":0.653387409469531,"failures":{"yelp.query.get-business":"get-business.feature:23 - path: $.data.business.name, actual: 'Garaje', expected: 'Garajehfjhsfdhk', reason: not equal"},"totalTime":2980.7533620000004,"threads":2,"scenarios":6,"failed":1,"passed":5,"version":"0.9.5","elapsedTime":2281.0}

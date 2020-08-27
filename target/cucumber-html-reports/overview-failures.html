@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Failures Overview</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>yelpGraphQL</td>
+      <td>27 Aug 2020, 10:40</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Failures Overview</h2>
+      <p>The following summary displays scenarios that failed.</p>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+        <div class="elements">
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2891755300.html">yelp/query/get-business.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1287684095.html">@business</a>
+</div>
+
+
+  <span class="lead-duration duration">0.821</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">query for a business by id</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">text query =</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>{
+  business(id: &quot;garaje-san-francisco&quot;){
+    name
+    id
+    alias
+    url
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { query: '#(query)' }</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.816</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>10:40:43.402 request:
+1 &gt; POST https://api.yelp.com/v3/graphql
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 102
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.yelp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{&quot;query&quot;:&quot;{\n  business(id: \&quot;garaje-san-francisco\&quot;){\n    name\n    id\n    alias\n    url\n  }\n}&quot;}
+
+10:40:44.054 response time in milliseconds: 649.55
+1 &lt; 200
+1 &lt; Accept-Ranges: bytes
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 varnish
+1 &lt; X-Cache: MISS
+1 &lt; X-Cache-Hits: 0
+1 &lt; X-Served-By: cache-dub4332-DUB
+1 &lt; content-type: application/json
+1 &lt; server: openresty/1.13.6.2
+1 &lt; transfer-encoding: chunked
+1 &lt; x-b3-sampled: 0
+1 &lt; x-extlb: 10-65-64-83-useast1aprod
+1 &lt; x-proxied: 10-65-64-83-useast1aprod
+1 &lt; x-routing-service: routing-main--useast1-5bcb54c99f-mtp8t; site=public_api_v3
+1 &lt; x-zipkin-id: 2b0050eb8aa97bea
+{&quot;data&quot;:{&quot;business&quot;:{&quot;name&quot;:&quot;Garaje&quot;,&quot;id&quot;:&quot;tnhfDv5Il8EaGSXZGiuQGg&quot;,&quot;alias&quot;:&quot;garaje-san-francisco&quot;,&quot;url&quot;:&quot;https://www.yelp.com/biz/garaje-san-francisco?adjust_creative=6AbCaexLqwnJsHqFj_HZBQ&amp;utm_campaign=yelp_api_v3&amp;utm_medium=api_v3_graphql&amp;utm_source=6AbCaexLqwnJsHqFj_HZBQ&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response ==</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: get-business.feature:23 - path: $.data.business.name, actual: 'Garaje', expected: 'Garajehfjhsfdhk', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>{
+  &quot;data&quot;: {
+    &quot;business&quot;: {
+      &quot;name&quot;: &quot;Garajehfjhsfdhk&quot;,
+      &quot;id&quot;: &quot;tnhfDv5Il8EaGSXZGiuQGg&quot;,
+      &quot;alias&quot;: &quot;garaje-san-francisco&quot;,
+      &quot;url&quot;: &quot;https://www.yelp.com/biz/garaje-san-francisco?adjust_creative=6AbCaexLqwnJsHqFj_HZBQ&amp;utm_campaign=yelp_api_v3&amp;utm_medium=api_v3_graphql&amp;utm_source=6AbCaexLqwnJsHqFj_HZBQ&quot;
+    }
+  }
+}
+10:40:44.057 assertion failed: path: $.data.business.name, actual: 'Garaje', expected: 'Garajehfjhsfdhk', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

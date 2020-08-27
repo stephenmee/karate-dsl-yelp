@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"},{"id":2,"content":"ForkJoinPool-1-worker-0"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"get-business[1:8]","start":628,"end":1463,"title":"get-business[1:8] 01:00:00.628-01:00:01.463 query for a business by id"},{"id":2,"group":2,"content":"get-business[2:38]","start":628,"end":1710,"title":"get-business[2:38] 01:00:00.628-01:00:01.710 search for burritos in Cork"},{"id":3,"group":1,"content":"get-business[3.1:104]","start":1469,"end":1767,"title":"get-business[3.1:104] 01:00:01.469-01:00:01.767 test all query variables"},{"id":4,"group":2,"content":"get-business[3.2:105]","start":1716,"end":1979,"title":"get-business[3.2:105] 01:00:01.716-01:00:01.979 test all query variables"},{"id":5,"group":1,"content":"get-business[3.3:106]","start":1771,"end":2043,"title":"get-business[3.3:106] 01:00:01.771-01:00:02.043 test all query variables"},{"id":6,"group":2,"content":"get-business[3.4:107]","start":1983,"end":2237,"title":"get-business[3.4:107] 01:00:01.983-01:00:02.237 test all query variables"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="yelp.TestRunner" time="3.278" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="apiKey" value="5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/smeehan/code/yelpGraphQL/target/test-classes:/Users/smeehan/code/yelpGraphQL/target/classes:/Users/smeehan/.m2/repository/com/intuit/karate/karate-apache/0.9.5/karate-apache-0.9.5.jar:/Users/smeehan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.11/httpclient-4.5.11.jar:/Users/smeehan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/smeehan/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/smeehan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.11/httpmime-4.5.11.jar:/Users/smeehan/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/smeehan/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/smeehan/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/smeehan/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/smeehan/.m2/repository/com/intuit/karate/karate-junit5/0.9.5/karate-junit5-0.9.5.jar:/Users/smeehan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/smeehan/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/smeehan/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/smeehan/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/smeehan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/smeehan/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar:/Users/smeehan/.m2/repository/com/intuit/karate/karate-core/0.9.5/karate-core-0.9.5.jar:/Users/smeehan/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/smeehan/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/smeehan/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/smeehan/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/smeehan/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/smeehan/.m2/repository/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar:/Users/smeehan/.m2/repository/de/siegmar/fastcsv/1.0.3/fastcsv-1.0.3.jar:/Users/smeehan/.m2/repository/info/picocli/picocli/4.0.3/picocli-4.0.3.jar:/Users/smeehan/.m2/repository/net/masterthought/cucumber-reporting/5.2.1/cucumber-reporting-5.2.1.jar:/Users/smeehan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/Users/smeehan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/Users/smeehan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.1/jackson-core-2.10.1.jar:/Users/smeehan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.1/jackson-datatype-jsr310-2.10.1.jar:/Users/smeehan/.m2/repository/org/apache/velocity/velocity-engine-core/2.1/velocity-engine-core-2.1.jar:/Users/smeehan/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/smeehan/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/smeehan/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/Users/smeehan/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/smeehan/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/Users/smeehan/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20191001.1/owasp-java-html-sanitizer-20191001.1.jar:/Users/smeehan/.m2/repository/com/google/guava/guava/27.1-jre/guava-27.1-jre.jar:/Users/smeehan/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/smeehan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/smeehan/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/smeehan/.m2/repository/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar:/Users/smeehan/.m2/repository/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar:/Users/smeehan/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/smeehan/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar:/Users/smeehan/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/smeehan/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/smeehan/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/smeehan/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M3/maven-surefire-common-3.0.0-M3.jar:/Users/smeehan/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M3/surefire-api-3.0.0-M3.jar:/Users/smeehan/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M3/surefire-logger-api-3.0.0-M3.jar:/Users/smeehan/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M3/surefire-booter-3.0.0-M3.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-core/3.0-alpha-2/maven-core-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-lifecycle/3.0-alpha-2/maven-lifecycle-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-reporting-api/3.0-alpha-2/maven-reporting-api-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-9/doxia-sink-api-1.0-alpha-9.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-model/3.0-alpha-2/maven-model-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-plugin-api/3.0-alpha-2/maven-plugin-api-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-beta-3.0.5/plexus-container-default-1.0-beta-3.0.5.jar:/Users/smeehan/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar:/Users/smeehan/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar:/Users/smeehan/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar:/Users/smeehan/.m2/repository/com/google/code/google-collections/google-collect/snapshot-20080530/google-collect-snapshot-20080530.jar:/Users/smeehan/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-project/3.0-alpha-2/maven-project-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/codehaus/woodstox/wstx-asl/3.2.6/wstx-asl-3.2.6.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-project-builder/3.0-alpha-2/maven-project-builder-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/commons-cli/commons-cli/1.0/commons-cli-1.0.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-classworlds/1.3/plexus-classworlds-1.3.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.0-beta-3.0.5/plexus-component-annotations-1.0-beta-3.0.5.jar:/Users/smeehan/.m2/repository/org/sonatype/plexus/plexus-plugin-manager/1.0-alpha-1/plexus-plugin-manager-1.0-alpha-1.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-plexus/1.0.0-alpha-2/mercury-plexus-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-remote-m2/1.0.0-alpha-2/mercury-repo-remote-m2-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-api/1.0.0-alpha-2/mercury-repo-api-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-transport-api/1.0.0-alpha-2/mercury-transport-api-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-crypto-api/1.0.0-alpha-2/mercury-crypto-api-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-transport-http/1.0.0-alpha-2/mercury-transport-http-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/jetty-client/6.1.12/jetty-client-6.1.12.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/jetty-sslengine/6.1.12/jetty-sslengine-6.1.12.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/jetty/6.1.12/jetty-6.1.12.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/jetty-util/6.1.12/jetty-util-6.1.12.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.12/servlet-api-2.5-6.1.12.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-crypto-basic/1.0.0-alpha-2/mercury-crypto-basic-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar:/Users/smeehan/.m2/repository/bouncycastle/bcpg-jdk15/140/bcpg-jdk15-140.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-md-shared/1.0.0-alpha-2/mercury-md-shared-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-util/1.0.0-alpha-2/mercury-util-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-local-m2/1.0.0-alpha-2/mercury-repo-local-m2-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-virtual/1.0.0-alpha-2/mercury-repo-virtual-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-cache-fs/1.0.0-alpha-2/mercury-repo-cache-fs-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-md-sat/1.0.0-alpha-2/mercury-md-sat-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/sat4j/org.sat4j.core/2.0.4/org.sat4j.core-2.0.4.jar:/Users/smeehan/.m2/repository/org/sat4j/org.sat4j.pb/2.0.4/org.sat4j.pb-2.0.4.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-event/1.0.0-alpha-2/mercury-event-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-logging/1.0.0-alpha-2/mercury-logging-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-lang/1.1/plexus-lang-1.1.jar:/Users/smeehan/.m2/repository/org/slf4j/slf4j-jdk14/1.5.3/slf4j-jdk14-1.5.3.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-mercury/3.0-alpha-2/maven-mercury-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-artifact/1.0.0-alpha-2/mercury-artifact-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-external/1.0.0-alpha-2/mercury-external-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/sonatype/spice/model-builder/1.3/model-builder-1.3.jar:/Users/smeehan/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-compat/3.0-alpha-2/maven-compat-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-4/wagon-provider-api-1.0-beta-4.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-java/1.0.1/plexus-java-1.0.1.jar:/Users/smeehan/.m2/repository/org/ow2/asm/asm/7.0-beta/asm-7.0-beta.jar:/Users/smeehan/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar:"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="user.country.format" value="IE"/>
+    <property name="host" value="https://api.yelp.com/v3/graphql"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/smeehan/code/yelpGraphQL/target/surefire/surefirebooter6755620489688114829.jar /Users/smeehan/code/yelpGraphQL/target/surefire 2020-08-27T10-40-41_727-jvmRun1 surefire1608948594431371141tmp surefire_02671221885101052643tmp"/>
+    <property name="surefire.test.class.path" value="/Users/smeehan/code/yelpGraphQL/target/test-classes:/Users/smeehan/code/yelpGraphQL/target/classes:/Users/smeehan/.m2/repository/com/intuit/karate/karate-apache/0.9.5/karate-apache-0.9.5.jar:/Users/smeehan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.11/httpclient-4.5.11.jar:/Users/smeehan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/smeehan/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/smeehan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.11/httpmime-4.5.11.jar:/Users/smeehan/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/smeehan/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/smeehan/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/smeehan/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/smeehan/.m2/repository/com/intuit/karate/karate-junit5/0.9.5/karate-junit5-0.9.5.jar:/Users/smeehan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/smeehan/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/smeehan/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/smeehan/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/smeehan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/smeehan/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar:/Users/smeehan/.m2/repository/com/intuit/karate/karate-core/0.9.5/karate-core-0.9.5.jar:/Users/smeehan/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/smeehan/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/smeehan/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/smeehan/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/smeehan/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/smeehan/.m2/repository/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar:/Users/smeehan/.m2/repository/de/siegmar/fastcsv/1.0.3/fastcsv-1.0.3.jar:/Users/smeehan/.m2/repository/info/picocli/picocli/4.0.3/picocli-4.0.3.jar:/Users/smeehan/.m2/repository/net/masterthought/cucumber-reporting/5.2.1/cucumber-reporting-5.2.1.jar:/Users/smeehan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/Users/smeehan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/Users/smeehan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.1/jackson-core-2.10.1.jar:/Users/smeehan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.1/jackson-datatype-jsr310-2.10.1.jar:/Users/smeehan/.m2/repository/org/apache/velocity/velocity-engine-core/2.1/velocity-engine-core-2.1.jar:/Users/smeehan/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/smeehan/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/smeehan/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/Users/smeehan/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/smeehan/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/Users/smeehan/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20191001.1/owasp-java-html-sanitizer-20191001.1.jar:/Users/smeehan/.m2/repository/com/google/guava/guava/27.1-jre/guava-27.1-jre.jar:/Users/smeehan/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/smeehan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/smeehan/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/smeehan/.m2/repository/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar:/Users/smeehan/.m2/repository/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar:/Users/smeehan/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/smeehan/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar:/Users/smeehan/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/smeehan/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/smeehan/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/smeehan/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M3/maven-surefire-common-3.0.0-M3.jar:/Users/smeehan/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M3/surefire-api-3.0.0-M3.jar:/Users/smeehan/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M3/surefire-logger-api-3.0.0-M3.jar:/Users/smeehan/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M3/surefire-booter-3.0.0-M3.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-core/3.0-alpha-2/maven-core-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-lifecycle/3.0-alpha-2/maven-lifecycle-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-reporting-api/3.0-alpha-2/maven-reporting-api-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-9/doxia-sink-api-1.0-alpha-9.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-model/3.0-alpha-2/maven-model-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-plugin-api/3.0-alpha-2/maven-plugin-api-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-beta-3.0.5/plexus-container-default-1.0-beta-3.0.5.jar:/Users/smeehan/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar:/Users/smeehan/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar:/Users/smeehan/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar:/Users/smeehan/.m2/repository/com/google/code/google-collections/google-collect/snapshot-20080530/google-collect-snapshot-20080530.jar:/Users/smeehan/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-project/3.0-alpha-2/maven-project-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/codehaus/woodstox/wstx-asl/3.2.6/wstx-asl-3.2.6.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-project-builder/3.0-alpha-2/maven-project-builder-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/commons-cli/commons-cli/1.0/commons-cli-1.0.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-classworlds/1.3/plexus-classworlds-1.3.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.0-beta-3.0.5/plexus-component-annotations-1.0-beta-3.0.5.jar:/Users/smeehan/.m2/repository/org/sonatype/plexus/plexus-plugin-manager/1.0-alpha-1/plexus-plugin-manager-1.0-alpha-1.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-plexus/1.0.0-alpha-2/mercury-plexus-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-remote-m2/1.0.0-alpha-2/mercury-repo-remote-m2-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-api/1.0.0-alpha-2/mercury-repo-api-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-transport-api/1.0.0-alpha-2/mercury-transport-api-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-crypto-api/1.0.0-alpha-2/mercury-crypto-api-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-transport-http/1.0.0-alpha-2/mercury-transport-http-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/jetty-client/6.1.12/jetty-client-6.1.12.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/jetty-sslengine/6.1.12/jetty-sslengine-6.1.12.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/jetty/6.1.12/jetty-6.1.12.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/jetty-util/6.1.12/jetty-util-6.1.12.jar:/Users/smeehan/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.12/servlet-api-2.5-6.1.12.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-crypto-basic/1.0.0-alpha-2/mercury-crypto-basic-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar:/Users/smeehan/.m2/repository/bouncycastle/bcpg-jdk15/140/bcpg-jdk15-140.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-md-shared/1.0.0-alpha-2/mercury-md-shared-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-util/1.0.0-alpha-2/mercury-util-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-local-m2/1.0.0-alpha-2/mercury-repo-local-m2-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-virtual/1.0.0-alpha-2/mercury-repo-virtual-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-repo-cache-fs/1.0.0-alpha-2/mercury-repo-cache-fs-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-md-sat/1.0.0-alpha-2/mercury-md-sat-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/sat4j/org.sat4j.core/2.0.4/org.sat4j.core-2.0.4.jar:/Users/smeehan/.m2/repository/org/sat4j/org.sat4j.pb/2.0.4/org.sat4j.pb-2.0.4.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-event/1.0.0-alpha-2/mercury-event-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-logging/1.0.0-alpha-2/mercury-logging-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-lang/1.1/plexus-lang-1.1.jar:/Users/smeehan/.m2/repository/org/slf4j/slf4j-jdk14/1.5.3/slf4j-jdk14-1.5.3.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-mercury/3.0-alpha-2/maven-mercury-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-artifact/1.0.0-alpha-2/mercury-artifact-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/mercury/mercury-external/1.0.0-alpha-2/mercury-external-1.0.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/sonatype/spice/model-builder/1.3/model-builder-1.3.jar:/Users/smeehan/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/smeehan/.m2/repository/org/apache/maven/maven-compat/3.0-alpha-2/maven-compat-3.0-alpha-2.jar:/Users/smeehan/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-4/wagon-provider-api-1.0-beta-4.jar:/Users/smeehan/.m2/repository/org/codehaus/plexus/plexus-java/1.0.1/plexus-java-1.0.1.jar:/Users/smeehan/.m2/repository/org/ow2/asm/asm/7.0-beta/asm-7.0-beta.jar:/Users/smeehan/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/smeehan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/smeehan/code/yelpGraphQL"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/smeehan/code/yelpGraphQL/target/surefire/surefirebooter6755620489688114829.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_222-b10"/>
+    <property name="user.name" value="smeehan"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/smeehan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/4w/k7yz5xkx4bq3zrgknfd5y7n40000gp/T/"/>
+    <property name="java.version" value="1.8.0_222"/>
+    <property name="user.dir" value="/Users/smeehan/code/yelpGraphQL"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/smeehan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="25.222-b10"/>
+    <property name="java.ext.dirs" value="/Users/smeehan/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testParallel" classname="yelp.TestRunner" time="3.275">
+    <failure message="failed features:&#10;yelp.query.get-business: get-business.feature:23 - path: $.data.business.name, actual: &apos;Garaje&apos;, expected: &apos;Garajehfjhsfdhk&apos;, reason: not equal&#10; ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+failed features:
+yelp.query.get-business: get-business.feature:23 - path: $.data.business.name, actual: 'Garaje', expected: 'Garajehfjhsfdhk', reason: not equal
+ ==> expected: <0> but was: <1>
+	at yelp.TestRunner.testParallel(TestRunner.java:21)
+]]></failure>
+    <system-out><![CDATA[10:40:43.018 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+10:40:43.401 [ForkJoinPool-1-worker-0] DEBUG com.intuit.karate - request:
+1 > POST https://api.yelp.com/v3/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 > Connection: Keep-Alive
+1 > Content-Length: 447
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.yelp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{"query":"{\n search(term: \"burrito\", location: \"cork\" limit: 2) {\n     total\n         business {\n             name\n             rating\n             location {\n                 address1\n                 city\n                 state\n                 country\n             }\n         reviews(limit: 1) {\n             text\n             rating\n             user {\n                 name\n             }\n         }\n     }\n }\n    }"}
+
+10:40:43.401 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.yelp.com/v3/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 > Connection: Keep-Alive
+1 > Content-Length: 102
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.yelp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{"query":"{\n  business(id: \"garaje-san-francisco\"){\n    name\n    id\n    alias\n    url\n  }\n}"}
+
+10:40:44.054 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 649.55
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Connection: keep-alive
+1 < Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 varnish
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Served-By: cache-dub4332-DUB
+1 < content-type: application/json
+1 < server: openresty/1.13.6.2
+1 < transfer-encoding: chunked
+1 < x-b3-sampled: 0
+1 < x-extlb: 10-65-64-83-useast1aprod
+1 < x-proxied: 10-65-64-83-useast1aprod
+1 < x-routing-service: routing-main--useast1-5bcb54c99f-mtp8t; site=public_api_v3
+1 < x-zipkin-id: 2b0050eb8aa97bea
+{"data":{"business":{"name":"Garaje","id":"tnhfDv5Il8EaGSXZGiuQGg","alias":"garaje-san-francisco","url":"https://www.yelp.com/biz/garaje-san-francisco?adjust_creative=6AbCaexLqwnJsHqFj_HZBQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=6AbCaexLqwnJsHqFj_HZBQ"}}}
+
+10:40:44.056 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - assertion failed: path: $.data.business.name, actual: 'Garaje', expected: 'Garajehfjhsfdhk', reason: not equal
+10:40:44.066 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.yelp.com/v3/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 > Connection: Keep-Alive
+1 > Content-Length: 75
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.yelp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{"query":"{\n  business(id: \"garaje-san-francisco\"){\n    alias\n  }\n}"}
+
+10:40:44.302 [ForkJoinPool-1-worker-0] DEBUG com.intuit.karate - response time in milliseconds: 898.94
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Connection: keep-alive
+1 < Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 varnish
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Served-By: cache-dub4336-DUB
+1 < content-type: application/json
+1 < server: openresty/1.13.6.2
+1 < transfer-encoding: chunked
+1 < x-b3-sampled: 0
+1 < x-extlb: 10-65-66-213-useast1aprod
+1 < x-proxied: 10-65-66-213-useast1aprod
+1 < x-routing-service: routing-main--useast1-5bcb54c99f-7g297; site=public_api_v3
+1 < x-zipkin-id: d5cccefdb8bb3fe2
+{"data":{"search":{"total":3,"business":[{"name":"La Calavera","rating":4.0,"location":{"address1":"4 Douglas West","city":"Cork","state":"CO","country":"IE"},"reviews":[{"text":"Saw the sign up for La Calavera for a couple months and was waiting for it to open- now it's here.\n\nWent for a first try tonight and found tasty...","rating":4,"user":{"name":"Daniel P."}}]},{"name":"Brendan's Veggie Burritos and Burgers","rating":4.0,"location":{"address1":"Patrick Street","city":"Cork","state":"CO","country":"IE"},"reviews":[{"text":"BRENDAN'S VEGGIES BURRITOS and BURGERS\nFast (well, fairly fast) Food stalls did a roaring trade during the weekend Jazz festival. I found myself in the...","rating":4,"user":{"name":"cork"}}]}]}}}
+
+10:40:44.312 [ForkJoinPool-1-worker-0] DEBUG com.intuit.karate - request:
+1 > POST https://api.yelp.com/v3/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 > Connection: Keep-Alive
+1 > Content-Length: 73
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.yelp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{"query":"{\n  business(id: \"garaje-san-francisco\"){\n    url\n  }\n}"}
+
+10:40:44.360 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 293.53
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Connection: keep-alive
+1 < Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 varnish
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Served-By: cache-dub4343-DUB
+1 < content-type: application/json
+1 < server: openresty/1.13.6.2
+1 < transfer-encoding: chunked
+1 < x-b3-sampled: 0
+1 < x-extlb: 10-65-72-168-useast1aprod
+1 < x-proxied: 10-65-72-168-useast1aprod
+1 < x-routing-service: routing-main--useast1-5bcb54c99f-knh68; site=public_api_v3
+1 < x-zipkin-id: 7499a942d6f71c6b
+{"data":{"business":{"alias":"garaje-san-francisco"}}}
+
+10:40:44.367 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.yelp.com/v3/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 > Connection: Keep-Alive
+1 > Content-Length: 80
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.yelp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{"query":"{\n  business(id: \"garaje-san-francisco\"){\n    is_claimed\n  }\n}"}
+
+10:40:44.572 [ForkJoinPool-1-worker-0] DEBUG com.intuit.karate - response time in milliseconds: 258.78
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Connection: keep-alive
+1 < Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 varnish
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Served-By: cache-dub4327-DUB
+1 < content-type: application/json
+1 < server: openresty/1.13.6.2
+1 < transfer-encoding: chunked
+1 < x-b3-sampled: 0
+1 < x-extlb: 10-65-64-83-useast1aprod
+1 < x-proxied: 10-65-64-83-useast1aprod
+1 < x-routing-service: routing-main--useast1-5bcb54c99f-knh68; site=public_api_v3
+1 < x-zipkin-id: c793c939b07871f7
+{"data":{"business":{"url":"https://www.yelp.com/biz/garaje-san-francisco?adjust_creative=6AbCaexLqwnJsHqFj_HZBQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=6AbCaexLqwnJsHqFj_HZBQ"}}}
+
+10:40:44.579 [ForkJoinPool-1-worker-0] DEBUG com.intuit.karate - request:
+1 > POST https://api.yelp.com/v3/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5_nPFBUTmvLfrcBDBDz3JvpXc1zllnvgD6w3JBCQjN09_KV1q-I4iFrMLTuEtUlLj7QCAZkDnVfl47FgJEbSVBM8gQbpDjon-lz27yHXc1XwXGzQTv5isrK_dSI-X3Yx
+1 > Connection: Keep-Alive
+1 > Content-Length: 76
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.yelp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_222)
+{"query":"{\n  business(id: \"garaje-san-francisco\"){\n    rating\n  }\n}"}
+
+10:40:44.636 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 268.19
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Connection: keep-alive
+1 < Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 varnish
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Served-By: cache-dub4327-DUB
+1 < content-type: application/json
+1 < server: openresty/1.13.6.2
+1 < transfer-encoding: chunked
+1 < x-b3-sampled: 0
+1 < x-extlb: 10-65-190-208-useast1bprod
+1 < x-proxied: 10-65-190-208-useast1bprod
+1 < x-routing-service: routing-main--useast1-5bcb54c99f-5sr4s; site=public_api_v3
+1 < x-zipkin-id: 86f038c0298ca249
+{"data":{"business":{"is_claimed":true}}}
+
+10:40:44.830 [ForkJoinPool-1-worker-0] DEBUG com.intuit.karate - response time in milliseconds: 250.06
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Connection: keep-alive
+1 < Date: Thu, 27 Aug 2020 09:40:44 GMT
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 varnish
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Served-By: cache-dub4348-DUB
+1 < content-type: application/json
+1 < server: openresty/1.13.6.2
+1 < transfer-encoding: chunked
+1 < x-b3-sampled: 0
+1 < x-extlb: 10-65-66-213-useast1aprod
+1 < x-proxied: 10-65-66-213-useast1aprod
+1 < x-routing-service: routing-main--useast1-5bcb54c99f-thbg9; site=public_api_v3
+1 < x-zipkin-id: 108d7590a09eff68
+{"data":{"business":{"rating":4.5}}}
+
+10:40:44.875 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: classpath:yelp/query/get-business.feature
+---------------------------------------------------------
+feature: classpath:yelp/query/get-business.feature
+report: target/surefire-reports/yelp.query.get-business.json
+scenarios:  6 | passed:  5 | failed:  1 | time: 2.9808
+---------------------------------------------------------
+Karate version: 0.9.5
+======================================================
+elapsed:   2.28 | threads:    2 | thread time: 2.98 
+features:     1 | ignored:    0 | efficiency: 0.65
+scenarios:    6 | passed:     5 | failed: 1
+======================================================
+failed features:
+yelp.query.get-business: get-business.feature:23 - path: $.data.business.name, actual: 'Garaje', expected: 'Garajehfjhsfdhk', reason: not equal
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/Users/smeehan/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/smeehan/.m2/repository/org/slf4j/slf4j-jdk14/1.5.3/slf4j-jdk14-1.5.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+Aug 27, 2020 10:40:45 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/Users/smeehan/code/yelpGraphQL/target/surefire-reports/yelp.query.get-business.json' contains 1 features
+]]></system-err>
+  </testcase>
+</testsuite>
