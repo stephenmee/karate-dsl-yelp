@@ -1,4 +1,4 @@
-package yelp;
+package yelpGraphQL;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
@@ -16,7 +16,7 @@ class TestRunner {
 
     @Test
     public void testParallel() {
-        Results results = Runner.path("classpath:yelp").tags("~@ignore", "@business").parallel(2);
+        Results results = Runner.path("classpath:yelpGraphQL").tags("~@ignore", "@business").parallel(2);
         generateReport("target/surefire-reports");
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }

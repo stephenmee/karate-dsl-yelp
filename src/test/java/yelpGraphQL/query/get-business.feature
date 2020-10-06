@@ -1,12 +1,12 @@
 Feature: test query business
 
   Background:
-    * url host
+    * url 'https://'+host+'/v3/graphql'
     * header Authorization = 'Bearer '+apiKey
 
   @business
   Scenario: query for a business by id
-    Given  text query =
+    Given text query =
     """
     {
       business(id: "garaje-san-francisco"){

@@ -11,7 +11,7 @@ Requirements: Java and Maven
   
 To run the tests locally, execute this command - you also need to supply the apiKey in the command (apiKey will be generated for you when you signup to the beta program)
 
-    mvn clean test -Dhost=https://api.yelp.com/v3/graphql -DapiKey=yourApiKey
+    mvn clean test -Dhost=api.yelp.com -DapiKey=yourApiKey
     
 A report will be generated in target/cucumber-html-reports/overview-features.html
 
